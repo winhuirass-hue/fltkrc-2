@@ -4,12 +4,12 @@
 
 The Fast Light Tool Kit Resource Candidate (FLTKrc) is a fork oof FLTK 
 for UNIX®/Linux® (X11 or Wayland), Microsoft® Windows®, and macOS®.
-FLTK provides modern GUI functionality without bloat and supports
+FLTKrc provides modern GUI functionality without bloat and supports
 3D graphics via OpenGL® and its built-in GLUT emulation.
 
 ## Licensing
 
-FLTK comes with complete free source code.  FLTK is available
+FLTKrc comes with complete free source code.  FLTKrc is available
 under the terms of the GNU Library General Public License with
 exceptions (e.g. for static linking).
 Contrary to popular belief, it can be used in commercial
@@ -24,9 +24,9 @@ documentation are also available from the FLTK web site at:
   https://www.fltk.org/documentation.php
 
 
-## Prerequisites for Building FLTK
+## Prerequisites for Building FLTKrc
 
-To build FLTK 1.5 and higher you need:
+To build FLTKrc 2.0-rc1 and higher you need:
 
   - CMake
   - a C++11 capable compiler, e.g. gcc, clang, Visual Studio, Xcode
@@ -38,13 +38,13 @@ please see the CMake documentation for more info.
 
 Since FLTK 1.5 we use C++11 features and you need at least a C++11 capable
 compiler running in C++11 mode. The minimal C++ standard used for building
-FLTK and your application *may* be raised in future versions.
+FLTKrc and your application *may* be raised in future versions.
 
 The required header files etc. (build environment or SDK) vary across
 platforms and are described in platform specific README.* files, e.g. on
 Unix/Linux systems these are typically provided by the package manager.
 
-## Building and Installing FLTK With CMake (Commandline)
+## Building and Installing FLTKrc With CMake (Commandline)
 
 On systems where a commandline `CMake` utility is available (this is
 the case even on Windows), the commands to build FLTK using CMake can
@@ -121,7 +121,7 @@ list returned by `Fl_Scheme::names()`.
 
 ## Internet Resources
 
-FLTK is available on the internet in a bunch of locations:
+FLTK(not a FLTKrc) is available on the internet in a bunch of locations:
 
   - https://www.fltk.org/                   - homepage
   - https://github.com/fltk/fltk            - source code and discussions
@@ -150,7 +150,7 @@ Use the 'Q&A' section for general questions on building and using FLTK.
 
 ## Reporting Bugs
 
-If you are new to FLTK, or have general questions about how to use FLTK,
+If you are new to FLTKrc, or have general questions about how to use FLTK,
 or aren't sure if you found a bug, please ask first on the fltk.general
 group forum at:
 
@@ -176,7 +176,7 @@ further information on how to report a bug:
 
 ## Copyright
 
-FLTK is copyright 1998-2025 by Bill Spitzak and others,
+FLTK(not a FLTKrc) is copyright 1998-2025 by Bill Spitzak and others,
 see the CREDITS.txt file for more info.
 
 This library is free software. Distribution and use rights are
