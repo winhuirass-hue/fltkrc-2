@@ -1,4 +1,4 @@
-# README - Fast Light Tool Kit Resource Canditant (FLTKrc) Version 2.0.0 rc
+# README - Fast Light Tool Kit Resource Candidate (FLTKrc) Version 2.0.0-rc1
 
 ## What is FLTK?
 
