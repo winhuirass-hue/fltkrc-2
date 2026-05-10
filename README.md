@@ -102,6 +102,29 @@ use equivalent commands of your build system, e.g. `make html` or
 
 Note: more about building Fluid documentation to be added.
 
+## UI Schemes and Dark Mode
+
+FLTK provides built-in UI schemes you can select at runtime with `Fl::scheme()`.
+Common built-in schemes include `base`, `plastic`, `gtk+`, `gleam`, `oxy`,
+and in this repository, `dark`.
+
+Use dark mode in your app by setting the scheme before creating and showing
+your windows:
+
+```cpp
+#include <FL/Fl.H>
+
+int main(int argc, char **argv) {
+  Fl::scheme("dark");
+  // create windows/widgets
+  return Fl::run();
+}
+```
+
+If you want users to choose at runtime, use `Fl_Scheme_Choice` to present the
+list returned by `Fl_Scheme::names()`.
+
+
 ## Internet Resources
 
 FLTK is available on the internet in a bunch of locations:
