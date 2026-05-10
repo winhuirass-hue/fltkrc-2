@@ -2,7 +2,7 @@
 
 ## What is FLTKrc?
 
-The Fast Light Tool Kit Resource Candidate (FLTKrc) is a fork oof FLTK 
+The Fast Light Tool Kit Resource Candidate (FLTKrc) is a fork of FLTK 
 for UNIX®/Linux® (X11 or Wayland), Microsoft® Windows®, and macOS®.
 FLTKrc provides modern GUI functionality without bloat and supports
 3D graphics via OpenGL® and its built-in GLUT emulation.
