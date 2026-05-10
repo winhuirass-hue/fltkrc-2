@@ -175,15 +175,11 @@ further information on how to report a bug:
 - macOS is a registered trademark of Apple Computers, Inc.
 
 ## Copyright
+FLTKrc is distributed under the same license terms as FLTK,
+unless stated otherwise in individual source files.
 
-FLTK(not a FLTKrc) is copyright 1998-2025 by Bill Spitzak and others,
-see the CREDITS.txt file for more info.
-
-This library is free software. Distribution and use rights are
-outlined in the file "COPYING" which should have been included with
-this file.  If this file is missing or damaged, see the license at:
-
-  https://www.fltk.org/COPYING.php
+FLTK and FLTKrc are available under the GNU Library General Public License
+(LGPL) with applicable exceptions (e.g. static linking).
 
 ## Further Information
 
