@@ -179,6 +179,9 @@ static Fl_Pixmap        tile(tile_xpm);
 
     - "oxy" - This is a subset of Dmitrij K's oxy scheme (STR 2675, 3477)
 
+    - "dark" - Uses a dark gray palette with light foreground colors
+               based on the oxy boxtypes
+               
   If the given scheme name is unknown, the default scheme will be used.
 
   Setting the scheme (name) is case insensitive, but the stored scheme name will
@@ -204,6 +207,7 @@ int Fl::scheme(const char *s) {
     else if (!fl_ascii_strcasecmp(s, "plastic")) s = fl_strdup("plastic");
     else if (!fl_ascii_strcasecmp(s, "gleam")) s = fl_strdup("gleam");
     else if (!fl_ascii_strcasecmp(s, "oxy")) s = fl_strdup("oxy");
+    else if (!fl_ascii_strcasecmp(s, "dark")) s = fl_strdup("dark");
     else s = NULL;
   }
   if (scheme_) free((void*)scheme_);
@@ -343,6 +347,32 @@ int Fl::reload_scheme() {
     set_boxtype(FL_ROUND_DOWN_BOX,  FL_OXY_ROUND_DOWN_BOX);
 
     // Use slightly thinner scrollbars...
+       Fl::scrollbar_size(15);
+  } else if (scheme_ && !fl_ascii_strcasecmp(scheme_, "dark")) {
+    // Dark scheme based on oxy boxtypes
+    if (scheme_bg_) {
+      delete scheme_bg_;
+      scheme_bg_ = (Fl_Image *)0;
+    }
+
+    Fl::background(0x30, 0x30, 0x30);
+    Fl::background2(0x3c, 0x3c, 0x3c);
+    Fl::foreground(0xee, 0xee, 0xee);
+    Fl::set_color(FL_SELECTION_COLOR, 0x1e, 0x90, 0xff);
+    Fl::set_color(FL_INACTIVE_COLOR, 0x66, 0x66, 0x66);
+
+    set_boxtype(FL_UP_FRAME,        FL_OXY_UP_FRAME);
+    set_boxtype(FL_DOWN_FRAME,      FL_OXY_DOWN_FRAME);
+    set_boxtype(FL_THIN_UP_FRAME,   FL_OXY_THIN_UP_FRAME);
+    set_boxtype(FL_THIN_DOWN_FRAME, FL_OXY_THIN_DOWN_FRAME);
+
+    set_boxtype(FL_UP_BOX,          FL_OXY_UP_BOX);
+    set_boxtype(FL_DOWN_BOX,        FL_OXY_DOWN_BOX);
+    set_boxtype(FL_THIN_UP_BOX,     FL_OXY_THIN_UP_BOX);
+    set_boxtype(FL_THIN_DOWN_BOX,   FL_OXY_THIN_DOWN_BOX);
+    set_boxtype(FL_ROUND_UP_BOX,    FL_OXY_ROUND_UP_BOX);
+    set_boxtype(FL_ROUND_DOWN_BOX,  FL_OXY_ROUND_DOWN_BOX);
+
     Fl::scrollbar_size(15);
   } else {
     // Use the standard FLTK look-n-feel...
