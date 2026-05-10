@@ -73,6 +73,7 @@ const char **Fl_Scheme::names() {
   add_scheme_name("gtk+");
   add_scheme_name("gleam");
   add_scheme_name("oxy");
+  add_scheme_name("dark");
 
   return names_;
 }
